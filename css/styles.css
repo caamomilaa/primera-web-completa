@@ -1,3 +1,11 @@
+:root {
+  --color-green: #26bba4;
+  --color-purple: #6174ff;
+  --color-lightgrey: #9eabb2;
+  --color-darkgrey: #4c545c;
+  --color-white: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,4 +18,55 @@ img {
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+.header {
+  background-image: url(../assets/images/images/bg-header-mobile.png);
+  background-size: cover;
+  padding: 123px 12px 12px 12px;
+  margin: 0;
+}
+.header__icon {
+  width: 125px;
+  height: 125px;
+  margin-inline: auto;
+  margin-bottom: 70px;
+}
+.header__title {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.header__text {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  width: 311px;
+  height: 56px;
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 13px 50px 13px 50px;
+  color: var(--color-white);
+  margin: 12px 0 12px 0;
+}
+.button--ios {
+  background-color: var(--color-green);
+}
+.button--mac {
+  background-color: var(--color-purple);
+}
+.main {
+  padding: 123px 32px 32px 32px;
 }

@@ -4,6 +4,7 @@
   --color-lightgrey: #9eabb2;
   --color-darkgrey: #4c545c;
   --color-white: #ffffff;
+  --color-footer: #e3ebef;
 }
 
 * {
@@ -11,6 +12,7 @@
 }
 a {
   color: inherit;
+  text-decoration: none;
 }
 img {
   max-width: 100%;
@@ -38,16 +40,26 @@ body {
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
+  color: var(--color-darkgrey);
 }
 .header__text {
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
+  color: var(--color-lightgrey);
 }
 .buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (width >= 768px) {
+  .buttons{
+    flex-direction: row;
+    align-items: center;
+    margin-inline: auto;
+    gap: 16px;
+  }
 }
 .button {
   width: 311px;
@@ -60,6 +72,13 @@ body {
   padding: 13px 50px 13px 50px;
   color: var(--color-white);
   margin: 12px 0 12px 0;
+  margin-inline: auto;
+}
+@media screen and (width >= 768px) {
+  .button{
+    width: 227px;
+    padding: 13px 40px 13px 40px;
+  }
 }
 .button--ios {
   background-color: var(--color-green);
@@ -69,4 +88,77 @@ body {
 }
 .main {
   padding: 123px 32px 32px 32px;
+}
+.section--clipboard{
+  margin-bottom: 90px;
+}
+.section__title{
+  font-size: 1.75rem;
+  color: var(--color-darkgrey);
+  text-align: center;
+}
+.section__subtitle{
+  font-size: 1.5rem;
+  color: var(--color-darkgrey);
+  text-align: center;
+}
+.section__text{
+  font-size: 1rem;
+  color: var(--color-lightgrey);
+  text-align: center;
+}
+.icon{
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+}
+.img{
+  margin: 56px 0 56px 0;
+}
+@media screen and (width >= 768px) {
+  .section__item--brands{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .items{
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+    margin-inline: auto;
+  }
+}
+.section__item--brands{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57px;
+  width: 100%;
+  margin: 132px 0 132px 0;
+}
+.footer{
+  background-color: var(--color-footer);
+  padding: 52px 0 52px 0;
+}
+.footer__logo{
+  width: 55px;
+  height: 55px;
+  margin-inline: auto;
+  margin-bottom: 52px;
+}
+.footer__text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+}
+.footer__sm{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  margin-top: 52px;
 }
